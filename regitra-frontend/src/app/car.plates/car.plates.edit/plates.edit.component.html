@@ -1,0 +1,20 @@
+<form>
+    <div class="mat-headline">Add new car plate</div>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Car plate number</mat-label>
+            <input matInput placeholder="abc123" type="text" id="number" required [(ngModel)]="plate.number">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Owner name and surname</mat-label>
+            <input matInput placeholder="John Johnson" type="text" id="owner" required [(ngModel)]="plate.owner">
+        </mat-form-field>
+    </p>
+
+    <button mat-raised-button color="primary" (click)="savePlate()">
+        Save
+    </button>
+
+</form>
